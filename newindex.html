@@ -1,0 +1,115 @@
+<!doctype html>
+<meta charset=utf-8>
+<title> Jan Keromnes </title>
+
+<style>
+body {
+}
+.content {
+  clear: both;
+  border: 1px solid;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.item {
+  width: 23%;
+  margin-left: 5%; margin-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+.feed {
+  width: 39%;
+  margin-left: 5%; margin-right: 5%;
+  float: left;
+}
+.github {
+  background: lightgrey;
+  border-radius: 5px;
+}
+#github {
+  background: #feffff;
+}
+.yellow { background:yellow}
+.red { background:red}
+.green { background:green}
+</style>
+
+HERP
+
+<div class=content>
+<a class="red item" href=#><img src=airplane.svg><br>travel</a>
+<a class="yellow item" href=#><img src=atom.svg><br>technology</a>
+<a class="green item" href=#><img src=rocket.svg><br>space</a>
+</div>
+
+DERP
+
+<div class=content>
+
+<div class=feed>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 10,
+  interval: 30000,
+  width: 'auto',
+  height: 200,
+  theme: {
+    shell: {
+      background: '#69d2e7',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#feffff',
+      color: '#656d6f',
+      links: '#69d2e7'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setUser('jankeromnes').start();
+</script>
+</div>
+
+<div class="github feed">
+  github.com/jankeromnes
+  <div id=github></div>
+  view profile   
+</div>
+
+</div>
+LOL
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("https://github.com/jankeromnes.atom");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("github");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div = document.createElement("div");
+            div.appendChild(document.createTextNode(entry.title));
+            container.appendChild(div);
+          }
+        }
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+    </script>
