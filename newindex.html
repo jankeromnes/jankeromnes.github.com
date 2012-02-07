@@ -3,123 +3,123 @@
 <title> Jan Keromnes </title>
 
 <style>
-body {
-  font-family: verdana, monospace;
-}
-.content {
-  clear: both;
-  border: 1px solid;
-  padding-left: 5%;
-  padding-right: 5%;
-}
+body {font-family: verdana, monospace;}
+br {clear: both;}
+div.content {clear: both; padding-left: 5%; padding-right: 5%; padding-top: 50px; padding-bottom: 50px;}
+div.content h1 {color: #333; font-size: 20px; font-weight: normal; border-bottom: 1px dotted #ddd;}
 .item {
   width: 23%;
   margin-left: 5%; margin-right: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
   float: left;
+  font-size: 25px;
   text-align: center;
   text-decoration: none;
   color: black;
   border-radius: 10px;
 }
-.feed {
-  width: 39%;
-  margin-left: 5%; margin-right: 5%;
-  float: left;
+.item:hover {opacity: 0.8}
+.feed {width: 39%; margin-left: 5%; margin-right: 5%; float: left;}
+div.widget {
+  background: #F0F0F0; color: #333; font: 13px helvetica,arial,freesans,clean,sans-serif;
+  padding-top: 5px; border: 1px solid #cacaca;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4),0 0 10px rgba(0,0,0,0.1);
 }
-.github {
-  background: silver;
-  padding-top: 10px; padding-bottom: 10px;
-  border-radius: 5px;
-  color: white;
+div.widget a, div.content p a { color: #4183C4; text-decoration: none;}
+div.widget a:hover, div.content p a:hover { text-decoration: underline;}
+div.widget p { margin-left: 10px; margin-right: 10px;}
+div.widget p.right { text-align: right;}
+div.widget span.title { font-size: 18px; font-weight: bold; margin-left: 10px; margin-right: 10px;}
+div.widget span.title img {margin-top: 2px; margin-bottom: -2px;}
+div.widget pre#feed {
+  height: 200px; background: #feffff; padding: 5px; overflow-x: hidden; overflow-y: auto;
+  margin-top: 10px; margin-bottom: 10px; margin-left: 1px; margin-right: 1px; color: #656d6f;
+  font-size: 12px; font-family: "lucida grande",lucida,tahoma,helvetica,arial,sans-serif;
 }
-#github {
-  background: #feffff;
-  height: 200px;
-  margin-top: 10px; margin-bottom: 10px;
-  margin-left: 1px; margin-right: 1px;
-  border-radius: 5px;
-  color: #656d6f;
-  font-size: 12px;
-  font-family: "lucida grande",lucida,tahoma,helvetica,arial,sans-serif;
-}
-.yellow { background:yellow}
-.red { background:red}
-.green { background:green}
+div.widget pre#feed ul {border-bottom: 1px dotted #DDD;}
+div.widget pre#feed li {list-style: square; margin-left: -20px;}
+div.widget pre#feed blockquote {margin-left: 0px;}
+.yellow {background: #ffcc00}
+.yellow1 {background: #ffde00}
+.yellow2 {background: #ffe500}
+.red {background: red}
+.green {background: #92cd00;}
+.blue {background: #336699;}
+.blue1 {background: #005b9a;}
+.blue2 {background: #0191c8;}
+.blue3 {background: #74c2e1;}
+.violet {background: #421c52;}
+.violet2 {background: #732c7b;}7/02
+.violet3 {background: #8c489f;}
 </style>
 
-HERP
-
 <div class=content>
-<a class="red item" href=#><img src=airplane.svg><br>travel</a>
-<a class="yellow item" href=#><img src=atom.svg><br>technology</a>
-<a class="green item" href=#><img src=rocket.svg><br>space</a>
-</div>
 
-DERP
+<h1> hello </h1>
+<p>My name is <span title="It's pronounced /jˈɑːn/, 严 or Ян">Jan</span>. I study Computer Science. This is my blog.</p>
 
-<div class=content>
+<br>
+
+<h1> posts </h1>
+<a class="yellow1 item" href=#><img src=airplane.svg><br>travel</a>
+<a class="green item" href=#><img src=atom.svg><br>technology</a>
+<a class="blue2 item" href=#><img src=rocket.svg><br>space</a>
+
+<br><br>
+
+<h1> realtime </h1>
 
 <div class=feed>
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 10,
-  interval: 30000,
-  width: 'auto',
-  height: 200,
+  version: 2, type: 'profile', rpp: 10, interval: 30000, width: 'auto', height: 200,
   theme: {
-    shell: {
-      background: '#69d2e7',
-      color: '#ffffff'
-    },
-    tweets: {
-      background: '#feffff',
-      color: '#656d6f',
-      links: '#69d2e7'
-    }
+    shell: {background: '#74c2e1', color: '#333'},
+    tweets: {background: '#feffff', color: '#656d6f', links: '#69d2e7'}
   },
-  features: {
-    scrollbar: true,
-    loop: false,
-    live: true,
-    behavior: 'all'
-  }
+  features: {scrollbar: true, loop: false, live: true, behavior: 'all'}
 }).render().setUser('jankeromnes').start();
 </script>
 </div>
 
-<div class="github feed">
-  github.com/jankeromnes
-  <div id=github></div>
-  view profile   
+
+<div class="feed widget">
+  <span class=title><img src=https://a248.e.akamai.net/assets.github.com/images/icons/public.png></img> jankeromnes</span>
+  <pre id=feed></pre>
+  <p class=right><a href=https://github.com/jankeromnes>view profile &raquo;</a></p>
 </div>
 
+<br><br>
+
+<h1> more </h1>
+
+<p>
+  <a href=cv.html>CV</a>
+</p>
+
 </div>
-LOL
 
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-
-    google.load("feeds", "1");
-
-    function initialize() {
-      var feed = new google.feeds.Feed("https://github.com/jankeromnes.atom");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.getElementById("github");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div = document.createElement("div");
-            div.appendChild(document.createTextNode(entry.title));
-            container.appendChild(div);
-          }
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("feeds", "1");
+  function initialize() {
+    var feed = new google.feeds.Feed("https://github.com/jankeromnes.atom");
+    feed.load(function(result) {
+      if (!result.error) {
+        var container = document.getElementById("feed");
+        for (var i = 0; i < result.feed.entries.length; i++) {
+          var entry = result.feed.entries[i].content
+            .replace(/href="/g, 'href="https://github.com')
+            .replace(/>(\s*\n\s*)*</g, '><')
+            .replace(/<br>/g, '')
+            .replace(/a><a/g, 'a>\n      <a');
+          container.innerHTML += entry;
         }
-      });
-    }
-    google.setOnLoadCallback(initialize);
+      }
+    });
+  }
+  google.setOnLoadCallback(initialize);
+</script>
 
-    </script>
