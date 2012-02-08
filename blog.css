@@ -1,7 +1,9 @@
 body {font-family: verdana, monospace;}
 br {clear: both;}
-.center {text-align: center; margin: auto;}
+.center {text-align: center !important; margin: auto;}
+img.logo {position: fixed; top: 0px; left: 0px; height: 150px; width: 150px; opacity: 0.1;}
 div.content {clear: both; padding-left: 5%; padding-right: 5%; padding-top: 50px; padding-bottom: 50px;}
 div.content h1 {color: #333; font-size: 20px; font-weight: normal; border-bottom: 1px dotted #ddd;}
-div.content p a { color: #4183C4; text-decoration: none;}
+div.content p {text-align: justify}
+div.content p a { color: #4183C4; text-decoration: none; font-weight: bold;}
 div.content p a:hover { text-decoration: underline;}
