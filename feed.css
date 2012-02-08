@@ -1,0 +1,19 @@
+div.widget {
+  background: #F0F0F0; color: #333; font: 13px helvetica,arial,freesans,clean,sans-serif;
+  padding-top: 5px; border: 1px solid #cacaca;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4),0 0 10px rgba(0,0,0,0.1);
+}
+div.widget a { color: #4183C4; text-decoration: none;}
+div.widget a:hover { text-decoration: underline;}
+div.widget p { margin-left: 10px; margin-right: 10px;}
+div.widget p.right { text-align: right;}
+div.widget span.title { font-size: 18px; font-weight: bold; margin-left: 10px; margin-right: 10px;}
+div.widget span.title img {margin-top: 2px; margin-bottom: -2px;}
+div.widget pre#feed {
+  height: 250px; background: #feffff; padding: 5px; overflow-x: hidden; overflow-y: auto;
+  margin-top: 10px; margin-bottom: 10px; margin-left: 1px; margin-right: 1px; color: #656d6f;
+  font-size: 12px; font-family: "lucida grande",lucida,tahoma,helvetica,arial,sans-serif;
+}
+div.widget pre#feed ul {border-bottom: 1px dotted #DDD;}
+div.widget pre#feed li {list-style: square; margin-left: -20px;}
+div.widget pre#feed blockquote {margin-left: 0px;}

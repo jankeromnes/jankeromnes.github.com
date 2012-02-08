@@ -1,0 +1,26 @@
+.item {
+  width: 23%;
+  margin-left: 5%; margin-right: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+.item:hover {opacity: 0.8}
+.feed {width: 39%; margin-left: 5%; margin-right: 5%; float: left;}
+.yellow {background: #ffcc00}
+.yellow1 {background: #ffde00}
+.yellow2 {background: #ffe500}
+.red {background: red}
+.green {background: #92cd00;}
+.blue {background: #336699;}
+.blue1 {background: #005b9a;}
+.blue2 {background: #0191c8;}
+.blue3 {background: #74c2e1;}
+.violet {background: #421c52;}
+.violet2 {background: #732c7b;}7/02
+.violet3 {background: #8c489f;}
