@@ -1,82 +1,34 @@
 <!doctype html>
 <meta charset=utf-8>
 <title> Jan Keromnes </title>
-<link rel=stylesheet href=style.css>
-<link rel=stylesheet href=blog.css>
-<link rel=stylesheet href=feed.css>
-
-<div class=content>
+<link rel=stylesheet href=./.css>
 
 <h1> hello </h1>
-
-<p class=center>
-My name is <span title="It's pronounced /jˈɑːn/, 严 or Ян">Jan</span>. I study Computer Science. This is my blog.
-</p>
+<center> My name is <span title="It's pronounced /jˈɑːn/, 严 or Ян">Jan</span>. I study Computer Science. This is my blog. </center>
 
 <br>
-
+<!--
 <h1> posts </h1>
 <a class="yellow1 item" href=travel.html><img src=airplane.svg><br>travel</a>
 <a class="green item" href=technology.html><img src=atom.svg><br>technology</a>
 <a class="blue2 item" href=space.html><img src=planet.svg><br>space</a>
-
 <br><br>
+-->
 
 <h1> activity </h1>
 
-<div class=feed>
-<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2, type: 'profile', rpp: 10, interval: 30000, width: 'auto', height: 250,
-  theme: {
-    shell: {background: '#74c2e1', color: '#333'},
-    tweets: {background: '#feffff', color: '#656d6f', links: '#69d2e7'}
-  },
-  features: {scrollbar: true, loop: false, live: true, behavior: 'all'}
-}).render().setUser('jankeromnes').start();
-</script>
-</div>
+<center>
 
+<a class='twitter-timeline item' data-dnt=true href=https://twitter.com/jankeromnes data-widget-id=428577515200708610></a>
+<script defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
 
-<div class="feed widget">
-  <span class=title>
-    <img src=https://a248.e.akamai.net/assets.github.com/images/icons/public.png></img>
-    <a href=https://github.com/jankeromnes>github.com/jankeromnes</a>
-  </span>
-  <pre id=feed></pre>
-  <p class=right><a href=https://github.com/jankeromnes>view profile &raquo;</a></p>
-</div>
+<iframe src=http://ghactivity.com/jankeromnes/10 frameborder=0 width=518 height=397 style='border:1px solid lightgrey;border-radius:5px;margin-right:14px' class=item></iframe>
 
 <br><br>
 
+<a href=https://www.ohloh.net/accounts/526482?ref=Detailed target=_blank><img border=0 width=230 src=https://www.ohloh.net/accounts/526482/widgets/account_detailed.gif></a>
+
+</center>
+
 <h1> more </h1>
-
-<p>
-  <a href=cv.html>CV</a>
-</p>
-
-</div>
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript">
-  google.load("feeds", "1");
-  function initialize() {
-    var feed = new google.feeds.Feed("https://github.com/jankeromnes.atom");
-    feed.load(function(result) {
-      if (!result.error) {
-        var container = document.getElementById("feed");
-        for (var i = 0; i < result.feed.entries.length; i++) {
-          var entry = result.feed.entries[i].content
-            .replace(/href="/g, 'href="https://github.com')
-            .replace(/>(\s*\n\s*)*</g, '><')
-            .replace(/<br>/g, '')
-            .replace(/a><a/g, 'a>\n      <a');
-          container.innerHTML += entry;
-        }
-      }
-    });
-  }
-  google.setOnLoadCallback(initialize);
-</script>
-
+<a href=cv.html>cv</a>
