@@ -6,6 +6,10 @@ img.logo {position: fixed; top: 0; left: 0; height: 150px; width: 150px; opacity
 h1 {color: #333; font-size: 20px; font-weight: normal; border-bottom: 1px dotted #ddd;}
 h2 {color: #333; font-size: 15px; font-weight: normal; text-align: right; margin-top: -13px;}
 article {}
-a { color: #4183C4; text-decoration: none; font-weight: bold;}
+a {color: #4183C4; text-decoration: none; font-weight: bold;}
 a:hover { text-decoration: underline;}
 .activity {opacity: 0.8;}
+idea {white-space:pre;display:block;margin:20px;line-height:30px;height:30px; overflow:hidden}
+idea::before {color:lightgrey;content:'▶'}
+idea:hover {height:auto}
+idea > a {font-weight: normal}
