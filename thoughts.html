@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset=utf-8>
+<title> Thoughts </title>
+<link rel=stylesheet href=./a.css>
+
+<h1> Le Post </h1> <h2> 2014-02-16 </h2>
+
+Le exciting content.
+
+<script>
+NodeList.prototype.forEach = Array.prototype.forEach; // fix html
+var l = document.location;
+l.nohash =  l.href.slice(0,-l.hash.length);
+function dash(text) {
+  return text.slice(1,-1).toLowerCase().replace(/\s/g,'-');
+}
+document.querySelectorAll('h1').forEach(function(h){
+  var a = document.createElement('a'), c = h.textContent, d = dash(c);
+  a.title = c; a.name = d; a.href = l.nohash + '#' + d; a.textContent = '#';
+  h.appendChild(a);
+});
+</script>
