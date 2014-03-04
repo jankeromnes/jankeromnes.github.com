@@ -1,15 +1,14 @@
-body {font-family: verdana,monospace; clear:both; padding:50px 5%; text-align:justify}
-br {clear: both;}
+body {font-family: verdana,monospace; padding:50px 5%; text-align:justify}
 center {text-align: center !important; margin: auto;}
 .item {margin-left: 20px; margin-right: 20px; margin-top: 20px}
 img.logo {position: fixed; top: 0; left: 0; height: 150px; width: 150px; opacity: 0.1; z-index: -1}
 h1 {color: #333; font-size: 20px; font-weight: normal; border-bottom: 1px dotted #ddd;}
-h2 {color: #333; font-size: 15px; font-weight: normal; text-align: right; margin-top: -13px;}
+h2 {color: #333; font-size: 10px; font-weight: normal; text-align: right; margin-top: -13px;}
 article {}
 a {color: #4183C4; text-decoration: none; font-weight: bold;}
 a:hover { text-decoration: underline;}
 .activity {opacity: 0.8;}
 idea {white-space:pre;display:block;margin:20px;line-height:30px;height:30px; overflow:hidden}
 idea::before {color:lightgrey;content:'▶'}
-idea:hover {height:auto}
+idea:hover {height:auto;background-color:whitesmoke}
 idea > a {font-weight: normal}
