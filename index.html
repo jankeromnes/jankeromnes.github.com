@@ -1,34 +1,116 @@
 <!doctype html>
-<meta charset=utf-8>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title> Jan Keromnes </title>
-<link rel=stylesheet href=./a.css>
+
+<style>
+* { color: #333; font-family: verdana,monospace }
+body { max-width: 75rem; margin: 0 auto; padding: 1rem; display: flex; flex-wrap: wrap }
+h1, h2 { width: 100%; font-weight: normal; border-bottom: 1px dotted #ddd }
+h1 { font-size: 1.5rem; padding: 0.5rem }
+h2 { font-size: 1rem; margin: 0; padding: 0 0 0.5rem 0 }
+a { text-decoration: none } a:hover { text-decoration: underline }
+info, tool { flex-grow: 1; flex-basis: 20rem; display: flex; margin: 1rem; padding: 1rem }
+info { align-items: center }
+info > ul { list-style: none; margin: 0; padding: 0 }
+info > ul > li { margin-bottom: 2rem }
+info > a { display: flex; flex-direction: column; justify-content: center; }
+info > a > img { height: 2.2rem; margin-right: 1rem }
+tool { flex-direction: column; padding-bottom: 0.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0px 2px 2px rgba(0,0,0,0.2) }
+details { flex-grow: 1; display: flex }
+logo { padding: 1rem 1rem 0 0 }
+logo > img, logo > a > img { height: 4rem }
+deeds { flex-grow: 1; display: flex; flex-direction: column }
+deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; text-align: right }
+</style>
+
+<body>
 
 <h1> hello </h1>
-<center> My name is <span title="It's pronounced /jˈɑːn/, 严 or Ян">Jan</span>. I study Computer Science. This is my blog. </center>
 
-<br>
-<!--
-<h1> posts </h1>
-<a class="yellow1 item" href=travel.html><img src=airplane.svg><br>travel</a>
-<a class="green item" href=technology.html><img src=atom.svg><br>technology</a>
-<a class="blue2 item" href=space.html><img src=planet.svg><br>space</a>
-<br><br>
--->
+<info>
+ <ul>
+   <li> My name is <span title="It's pronounced /jˈɑːn/, Ян or 严">Jan</span>. </li>
+   <li> I'm a computer scientist. </li>
+   <li> I create tools. </li>
+ </ul>
+</info>
 
-<h1> activity </h1>
+<h1> tools </h1>
 
-<center>
+<tool>
+  <h2> <a href=https://thefiletree.com> The File Tree </a> </h2>
+  <details>
+    <logo> <a href=https://thefiletree.com> <img src=./icons/tree.svg> </a> </logo>
+    <deeds>
+      <p> A <a href=https://thefiletree.com/demo/>collaborative file system</a> for <a href=https://thefiletree.com/demo/index.html>live coding</a>. </p>
+      <span class=more> <a href=https://github.com/garden/tree> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
 
-<a class='twitter-timeline item' data-dnt=true href=https://twitter.com/jankeromnes data-widget-id=428577515200708610></a>
-<script defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+<tool>
+  <h2> <a href=http://codemirror.net> CodeMirror </a> </h2>
+  <details>
+    <logo> <a href=http://codemirror.net> <img src=./icons/codemirror.svg> </a> </logo>
+    <deeds>
+      <p> Added <a href=http://codemirror.net/mode/shell/index.html>Shell</a>, <a href=http://codemirror.net/mode/mllike/index.html>OCaml</a>, and the <a href=http://codemirror.net/demo/theme.html?monokai>Monokai theme</a>. </p>
+      <span class=more> <a href=https://github.com/codemirror/CodeMirror/commits/master?author=jankeromnes> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
 
-<iframe src=http://ghactivity.com/jankeromnes/10 frameborder=0 width=518 height=397 style='border:1px solid lightgrey;border-radius:5px;margin-right:14px' class=item></iframe>
+<tool>
+  <h2> <a href=https://developer.chrome.com/devtools> Chrome DevTools </a> </h2>
+  <details>
+    <logo> <a href=https://developer.chrome.com/devtools> <img src=./icons/chromedevtools.svg> </a> </logo>
+    <deeds>
+      <p> A <a href=https://developer.chrome.com/devtools#debugging-javascript>better DevTools editor</a> using <a href=http://codemirror.net>CodeMirror</a>. </p>
+      <span class=more> <a href=http://commits.peter.sh/stats/?start=2012-01-01&end=2014-01-01&filter=janx&exclude[2]=true&list=list> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
 
-<br><br>
+<tool>
+  <h2> <a href=https://www.google.com/chrome/browser/mobile/android.html> Chrome for Android </a> </h2>
+  <details>
+    <logo> <a href=https://www.google.com/chrome/browser/mobile/android.html> <img src=./icons/chrome.svg> </a> </logo>
+    <deeds>
+      <p> Added the <a href=https://www.google.com/intl/en/chrome/demos/speech.html>speech recognition API</a>. </p>
+      <span class=more> <a href=http://commits.peter.sh/stats/?start=2012-01-01&end=2014-01-01&filter=janx&exclude[1]=true&list=list> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
 
-<a href=https://www.ohloh.net/accounts/526482?ref=Detailed target=_blank><img border=0 width=230 src=https://www.ohloh.net/accounts/526482/widgets/account_detailed.gif></a>
+<tool>
+  <h2> <a href=https://developer.mozilla.org/docs/Tools> Firefox DevTools </a> </h2>
+  <details>
+    <logo> <a href=https://developer.mozilla.org/docs/Tools> <img src=./icons/firefox.svg> </a> </logo>
+    <deeds>
+      <p> Added a <a href=https://developer.mozilla.org/docs/Tools/WebIDE/Monitor>memory monitor</a> to <a href=https://developer.mozilla.org/docs/Tools/WebIDE>WebIDE</a>.</p>
+      <span class=more> <a href=https://github.com/mozilla/gecko-dev/commits/master?author=jankeromnes> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
 
-</center>
-
+<tool>
+  <h2> <a href=https://developer.mozilla.org/Firefox_OS> Firefox OS </a> </h2>
+  <details>
+    <logo> <a href=https://developer.mozilla.org/Firefox_OS> <img src=./icons/firefoxos.svg> </a> </logo>
+    <deeds>
+      <p> Added the <a href=https://developer.mozilla.org/en-US/Firefox_OS/Debugging/Developer_settings#Developer_HUD>Developer HUD</a>. </p>
+      <span class=more> <a href=https://github.com/mozilla-b2g/gaia/commits/master?author=jankeromnes> more… </a> </span>
+    </deeds>
+  </details>
+</tool>
+ 
 <h1> more </h1>
-<a href=cv.html>cv</a>
+
+<info> <a href=https://github.com/jankeromnes/><img src=./icons/github.svg></a>I code in the open. </info>
+<info> <a href=https://google.com/+JanKeromnes><img src=./icons/plus.svg></a>I talk about space and the future. </info>
+<info> <a href=https://twitter.com/jankeromnes><img src=./icons/twitter.svg></a>I retweet mildly interesting things. </info>
+<info> <a href=https://linkedin.com/in/jankeromnes><img src=./icons/linkedin.svg></a>I sometimes do the business thing. </info>
+<info> <a href=./cv.html><img src=./icons/cv.svg></a>I occasionally update my CV. </info>
+<info> <a href=https://www.ohloh.net/accounts/526482?ref=Detailed><img src=https://www.ohloh.net/accounts/526482/widgets/account_detailed.gif></a> </info>
+
+</body>
