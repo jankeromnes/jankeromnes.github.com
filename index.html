@@ -12,10 +12,8 @@ h2 { font-size: 1rem; margin: 0; padding: 0 0 0.5rem 0 }
 a { text-decoration: none } a:hover { text-decoration: underline }
 info, tool { flex-grow: 1; flex-basis: 20rem; display: flex; margin: 1rem; padding: 1rem }
 info { align-items: center }
-info > ul { list-style: none; margin: 0; padding: 0 }
-info > ul > li { margin-bottom: 2rem }
 info > a { display: flex; flex-direction: column; justify-content: center; }
-info > a > img { height: 2.2rem; margin-right: 1rem }
+info > a > img:not(.full) { max-width: 2.5rem; max-height: 2.5rem; margin-right: 1rem }
 tool { flex-direction: column; padding-bottom: 0.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0px 2px 2px rgba(0,0,0,0.2) }
 details { flex-grow: 1; display: flex }
 logo { padding: 1rem 1rem 0 0 }
@@ -28,13 +26,9 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
 
 <h1> hello </h1>
 
-<info>
- <ul>
-   <li> My name is <span title="It's pronounced /jˈɑːn/, Ян or 严">Jan</span>. </li>
-   <li> I'm a computer scientist. </li>
-   <li> I create tools. </li>
- </ul>
-</info>
+<info> My name is&nbsp;<span title="It's pronounced /jˈɑːn/, Ян or 严">Jan</span>. </info>
+<info> I'm a computer scientist. </info>
+<info> I create tools. </info>
 
 <h1> tools </h1>
 
@@ -43,7 +37,7 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
   <details>
     <logo> <a href=https://thefiletree.com> <img src=./icons/tree.svg> </a> </logo>
     <deeds>
-      <p> A <a href=https://thefiletree.com/demo/>collaborative file system</a> for <a href=https://thefiletree.com/demo/index.html>live coding</a>. </p>
+      <p> A <a href=https://thefiletree.com/>collaborative file system</a> for <a href=https://thefiletree.com/demo/index.html>live coding</a>. </p>
       <span class=more> <a href=https://github.com/garden/tree> more… </a> </span>
     </deeds>
   </details>
@@ -54,7 +48,7 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
   <details>
     <logo> <a href=http://codemirror.net> <img src=./icons/codemirror.svg> </a> </logo>
     <deeds>
-      <p> Added <a href=http://codemirror.net/mode/shell/index.html>Shell</a>, <a href=http://codemirror.net/mode/mllike/index.html>OCaml</a>, and the <a href=http://codemirror.net/demo/theme.html?monokai>Monokai theme</a>. </p>
+      <p> A web-based code editor, to which I added <a href=http://codemirror.net/mode/shell/index.html>Shell</a>, <a href=http://codemirror.net/mode/mllike/index.html>OCaml</a>, and the <a href=http://codemirror.net/demo/theme.html?monokai>Monokai theme</a>. </p>
       <span class=more> <a href=https://github.com/codemirror/CodeMirror/commits/master?author=jankeromnes> more… </a> </span>
     </deeds>
   </details>
@@ -76,7 +70,7 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
   <details>
     <logo> <a href=https://www.google.com/chrome/browser/mobile/android.html> <img src=./icons/chrome.svg> </a> </logo>
     <deeds>
-      <p> Added the <a href=https://www.google.com/intl/en/chrome/demos/speech.html>speech recognition API</a>. </p>
+      <p> Added <a href=https://www.google.com/intl/en/chrome/demos/speech.html>Speech Recognition</a>. </p>
       <span class=more> <a href=http://commits.peter.sh/stats/?start=2012-01-01&end=2014-01-01&filter=janx&exclude[1]=true&list=list> more… </a> </span>
     </deeds>
   </details>
@@ -106,11 +100,12 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
  
 <h1> more </h1>
 
-<info> <a href=https://github.com/jankeromnes/><img src=./icons/github.svg></a>I code in the open. </info>
-<info> <a href=https://google.com/+JanKeromnes><img src=./icons/plus.svg></a>I talk about space and the future. </info>
-<info> <a href=https://twitter.com/jankeromnes><img src=./icons/twitter.svg></a>I retweet mildly interesting things. </info>
-<info> <a href=https://linkedin.com/in/jankeromnes><img src=./icons/linkedin.svg></a>I sometimes do the business thing. </info>
-<info> <a href=./cv.html><img src=./icons/cv.svg></a>I occasionally update my CV. </info>
-<info> <a href=https://www.ohloh.net/accounts/526482?ref=Detailed><img src=https://www.ohloh.net/accounts/526482/widgets/account_detailed.gif></a> </info>
+<info> <a href=https://github.com/jankeromnes/><img src=./icons/github.svg></a> I code in the open. </info>
+<info> <a href=https://google.com/+JanKeromnes><img src=./icons/plus.svg></a> I talk about space and the future. </info>
+<info> <a href=https://twitter.com/jankeromnes><img src=./icons/twitter.svg></a> I retweet mildly interesting things. </info>
+<info> <a href=https://www.youtube.com/user/jankeromnes/videos><img src=./icons/youtube.svg></a> I infrequently give talks. </info>
+<info> <a href=https://linkedin.com/in/jankeromnes><img src=./icons/linkedin.svg></a> I sometimes do the business thing. </info>
+<info> <a href=./cv.html><img src=./icons/cv.svg></a> I occasionally update my CV. </info>
+<info> <a href=https://www.ohloh.net/accounts/526482?ref=Detailed><img class=full src=https://www.ohloh.net/accounts/526482/widgets/account_detailed.gif></a></info>
 
 </body>
