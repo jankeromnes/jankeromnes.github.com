@@ -9,11 +9,11 @@ body { max-width: 75rem; margin: 0 auto; padding: 1rem; display: flex; flex-wrap
 h1, h2 { width: 100%; font-weight: normal; border-bottom: 1px dotted #ddd }
 h1 { font-size: 1.5rem; padding: 0.5rem }
 h2 { font-size: 1rem; margin: 0; padding: 0 0 0.5rem 0 }
-a { text-decoration: none } a:hover { text-decoration: underline }
 info, tool { flex-grow: 1; flex-basis: 20rem; display: flex; margin: 1rem; padding: 1rem }
 info { align-items: center }
 info > a { display: flex; flex-direction: column; justify-content: center; }
 info > a > img:not(.full) { max-width: 2.5rem; max-height: 2.5rem; margin-right: 1rem }
+hint { cursor: help; text-decoration: underline dotted }
 tool { flex-direction: column; padding-bottom: 0.5rem; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0px 2px 2px rgba(0,0,0,0.2) }
 about { flex-grow: 1; display: flex }
 logo { padding: 1rem 1rem 0 0 }
@@ -26,7 +26,7 @@ deeds > .more { flex-grow: 1; display: flex; flex-direction: column-reverse; tex
 
 <h1> hello </h1>
 
-<info> My name is&nbsp;<span title="It's pronounced /jˈɑːn/, Ян or 严">Jan</span>. </info>
+<info> My name is&nbsp;<hint title="It's pronounced /jˈɑːn/ or Ян or 严.">Jan</hint>. </info>
 <info> I'm a computer scientist. </info>
 <info> I create tools. </info>
 
